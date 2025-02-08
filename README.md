@@ -1,54 +1,85 @@
 # EduCrack
 
-EduCrack is a program for password cracking. It provides various methods of cracking passwords using brute force and dictionary attacks.
+## Overview
+**EduCrack** is an advanced password cracking tool designed for educational and research purposes. It implements various password recovery techniques, including brute-force and dictionary-based attacks, to analyze and understand password vulnerabilities. The program provides an interactive interface that allows users to select different cracking methods, configure attack parameters, and retrieve cracked passwords efficiently.
 
-## Main Menu
+## Features
+- **Brute Force Attacks**
+  - **Classic Brute Force**: Tries all possible character combinations until the correct password is found.
+  - **Brute Force Mask**: Attempts password cracking with user-defined character sets and structures.
+- **Dictionary Attacks**
+  - **Classic Dictionary Attack**: Tests a list of commonly used passwords against the target hashes.
+  - **Dictionary Attack with Precomputed Hashes**: Uses a "rainbow table" for faster cracking.
+  - **Rule-Based Dictionary Attack**: Generates password variations based on user-defined rules.
+- **User-Friendly Interface**
+  - Main menu for selecting attack types and configurations.
+  - Help section with detailed explanations of attack methods and hashing algorithms.
+- **Supports Multiple Hashing Algorithms**
+  - SHA-256, SHA-512, MD5, and more.
+- **Customizable Parameters**
+  - Users can specify input files, dictionaries, hash algorithms, and output files.
+- **Real-Time Progress and Reporting**
+  - Displays ongoing attack progress and results.
 
-The program starts by displaying the main menu. Users can choose from different cracking methods or access the program's help and usage instructions.
+## Installation and Usage
 
-To select an option, enter the corresponding number from the menu. If the user wants to access the help, enter the number 4. This will display the help window.
+### Downloading EduCrack
+To download and run the **EduCrack** program, follow these steps:
 
-The help window provides a brief description of each attack method and their available options. It also explains the input arguments and supported hashing algorithms. Press the Esc key to return to the main menu.
+1. Navigate to the `/download` folder in this repository.
+2. Download the executable file: **educrack.exe**.
+3. Locate the downloaded file on your system.
 
-## Brute Force Attack
+### Running EduCrack
 
-To choose the brute force attack option, enter the number 1 in the main menu. This will display the brute force attack options. There are two options available:
+#### Windows Users:
+1. Double-click **educrack.exe** to launch the program.
+2. Follow the on-screen instructions to select an attack method and provide input files.
 
-1. Classic Brute Force Attack: This option tries all possible combinations of characters until it finds the password.
+#### Linux/Mac Users:
+EduCrack is primarily designed for Windows. If you are using a different operating system, consider running it in a Windows virtual machine or using a compatibility layer like **Wine**.
 
-2. Brute Force Mask Attack: This option attempts to crack the password using all possible combinations of characters but only considers the characters specified by the user in the mask input.
+### Attack Methods
 
-## Dictionary Attack
+#### **Brute Force Attack**
+1. Select **Option 1** in the main menu.
+2. Choose:
+   - **Classic Brute Force Attack** (Tests all character combinations)
+   - **Brute Force Mask Attack** (Uses a predefined character set and structure)
+3. Configure the attack parameters and start cracking.
 
-To choose the dictionary attack option, enter the number 2 in the main menu. This will display the dictionary attack options. There are three options available:
+#### **Dictionary Attack**
+1. Select **Option 2** in the main menu.
+2. Choose from:
+   - **Classic Dictionary Attack** (Tests common passwords from a wordlist)
+   - **Dictionary Attack with Precomputed Hashes** (Faster lookup-based cracking)
+   - **Rule-Based Dictionary Attack** (Applies password mutation rules)
+3. Provide the required input files and hashing algorithm.
 
-1. Classic Dictionary Attack: This option performs a dictionary attack by systematically testing a list of commonly used words, phrases, or passwords against the target hashed passwords.
+### Output
+- If a password is cracked, it is displayed alongside its hashed value.
+- Results can be optionally saved to a specified output file.
+- If the attack is unsuccessful, the program notifies the user.
 
-2. Dictionary Attack with Precomputed Hashes: This option involves comparing a list of precomputed hashes (commonly known as a "rainbow table") with the target hashed passwords to find matches. This method significantly speeds up the password cracking process.
+## Help and Documentation
+For assistance, select **Option 4** in the main menu to access the help window. It provides:
+- Descriptions of attack methods
+- Supported hashing algorithms
+- Explanation of required input arguments
+- Instructions on how to exit the help menu (press **Esc** to return to the main menu)
 
-3. Rule-Based Dictionary Attack: This option is similar to the classic dictionary attack but allows the user to generate variations of passwords based on specified rules. It increases the number of tested passwords, especially when certain patterns or rules are known.
+## System Requirements
+- **Operating System**: Windows 10/11 (or Wine on Linux/macOS)
+- **RAM**: 2GB minimum (4GB recommended)
+- **Storage**: At least 50MB of free space
+- **Dependencies**: No additional dependencies required
 
-## Usage
+## Disclaimer
+**EduCrack** was developed as part of a **bachelor’s thesis research project** and is intended **solely for educational and ethical security research purposes**. Unauthorized or illegal use of this tool is strictly prohibited. The author assumes no liability for misuse.
 
-For each attack method, the program prompts the user to enter the required parameters, such as the input file containing hashed passwords, dictionary file, and hashing algorithm. Once the necessary data is provided, the program starts the attack process. It systematically generates passwords and calculates their hashes using the specified algorithm. The generated hashes are then compared with the target hashed passwords. If a match is found, it means the password has been cracked. In this case, the password and its corresponding hashed value are displayed and optionally saved to an output file. If no match is found, the program notifies the user of an unsuccessful attempt.
+## License
+This project is open-source and distributed under the MIT License. Feel free to modify and contribute while adhering to ethical hacking practices.
 
-## Download Instructions
+---
 
-If you want to download and run the EduCrack program, follow these steps:
-
-1. Go to the /download folder in this repository.
-2. Click on the executable file (educrack.exe) to start the download.
-3. Once the download is complete, navigate to the downloaded file on your computer.
-
-### Running the Executable
-
-To run the EduCrack program:
-
-- For Windows: Double-click on the downloaded executable file (`educrack.exe`) to launch the program.
-
-Please note that the provided instructions assume you are using a Windows operating system. If you are using a different operating system, please refer to the appropriate instructions for running executables on your specific platform.
-
-Make sure to review the system requirements and any additional dependencies mentioned in the previous sections to ensure compatibility and proper execution of the EduCrack program.
-
-
-## This program was created within the scope of my thesis research solely for educational purposes.
+For any inquiries, suggestions, or contributions, please open an issue in this repository or contact the author.
