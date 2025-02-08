@@ -78,8 +78,6 @@ For assistance, select **Option 4** in the main menu to access the help window. 
 **EduCrack** was developed as part of a **bachelor’s thesis research project** and is intended **solely for educational and ethical security research purposes**. Unauthorized or illegal use of this tool is strictly prohibited. The author assumes no liability for misuse.
 
 ## License
-This project is open-source and distributed under the MIT License. Feel free to modify and contribute while adhering to ethical hacking practices.
-
----
+This project is open-source and distributed under the CC0 1.0 Universal License.
 
 For any inquiries, suggestions, or contributions, please open an issue in this repository or contact the author.
