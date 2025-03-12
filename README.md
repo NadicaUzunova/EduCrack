@@ -80,4 +80,4 @@ For assistance, select **Option 4** in the main menu to access the help window. 
 ## License
 This project is open-source and distributed under the CC0 1.0 Universal License.
 
-For any inquiries, suggestions, or contributions, please open an issue in this repository or contact the author.
+For any inquiries, suggestions, or contributions, please open an issue in this repository or contact me.
